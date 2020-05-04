@@ -48,3 +48,6 @@ with open('10-million-password-list-top-1000000.txt') as passwordList:
 # If there is absolutely no match found, this will execute and program terminates
 print('Password could not be found with in textfile')
 
+# Answers to questions
+A. user input hash: b7a875fc1ea228b9061041b7cec4bd3c52ab3ce3 ; password given: letmein ; attempts: 15
+B. user input hash: 801cdea58224c921c21fd2b183ff28ffa910ce31 ; password given: vjhtrhsvdctcegth ; attempts: 999,967
