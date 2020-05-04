@@ -1,4 +1,4 @@
-# homework2
+# homework2 || I.A.
 Small sha1 program that bruteforces the hashed guess into text and shows attempts taken 
 
 
