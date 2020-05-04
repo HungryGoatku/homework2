@@ -13,7 +13,7 @@ Small sha1 program that bruteforces the hashed guess into text and shows attempt
 # We begin with importing the hashlib library for Python to generate secure hash message
 import hashlib
 # Receive hash input from user
-shaOne = input("Please input the hash to crack. \n> ")
+shaOneHash = input("Please input the hash to crack. \n> ")
 
 # We will open file full of random passwords
 # hashed password Guess will be the password in plain text found within the file
@@ -37,10 +37,10 @@ with open('10-million-password-list-top-1000000.txt') as passwordList:
 # First condition will execute if they're is a match and show the attempts it took to find a match and terminate program
 # Second condition will execute if they're isn't a match and show no match, following up with continued search for match
 
-        if newGuess == shaOne:
+        if newGuess == shaOneHash:
             print(f'The password is {hashedpasswordGuess} which took {attempt} attempts.')
             exit(0)
-        elif newGuess != shaOne:
+        elif newGuess != shaOneHash:
             print(f'Password: {hashedpasswordGuess}, does not fit the match, trying next .. ')
             i += 1
             attempt += 1
